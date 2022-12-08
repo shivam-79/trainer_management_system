@@ -1,0 +1,30 @@
+Date: 26/11/2022
+Time: 10:42
+Phone Number: +919391400338
+Message: hii
+--------------------
+Date: 28/11/2022
+Time: 10:9
+Phone Number: +917799257492
+Message: hii trainer you are having a new batch No 5 and course python starts from 2022-11-28T10:30
+--------------------
+Date: 28/11/2022
+Time: 10:13
+Phone Number: +917799257492
+Message: hii trainer you are having a new batch No 5 and course python starts from 2022-11-28T10:30
+--------------------
+Date: 28/11/2022
+Time: 10:24
+Phone Number: +918309588245
+Message: hii trainer2 you are having a new batch No 6 and course java starts from 2022-11-28T10:30
+--------------------
+Date: 28/11/2022
+Time: 10:34
+Phone Number: +918309588245
+Message: hii trainer2 you are having a new batch No 8 and course python starts from 2022-11-28T10:30
+--------------------
+Date: 28/11/2022
+Time: 11:2
+Phone Number: +918309588245
+Message: hii trainer2 your assigned batch 2022-12-01 11:00:00+00:00 has been updated as 8 and course python starts from 2022-12-01T11:00
+--------------------

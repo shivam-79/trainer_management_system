@@ -1,0 +1,51 @@
+{% extends 'navbar//trainer_navbar.html' %}
+
+{% block content %}
+
+{% load static %}
+    <link href="{% static 'css/assign.css' %}" rel="stylesheet">
+
+<h1>update trainer details</h1>
+
+<form method="post">
+  {% csrf_token %}
+
+  <table align="center">
+    <tr>
+      <td align="center"><input type="text" name="txtN" value="{{ data.Tname }}" placeholder="Name"></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="text" name="txtPH" value="{{ data.Tphone}}" placeholder="Mobile"></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="email" name="txtM" value="{{ data.Temail}}" placeholder="Email"></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <select name="ddlCity">
+          <option selected>{{ data.Tcity}}</option>
+          {% for i in data2 %}
+          <option>{{ i.city_name }}</option>
+          {% endfor %}
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <select name="ddlCourse">
+          <option selected>{{ data.Tcourse }}</option>
+          {% for i in data3 %}
+          <option>{{ i.course_name }}</option>
+          {% endfor %}
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <input type="submit" name="sub" id="sub" value="update">
+      </td>
+    </tr>
+  </table>
+</form>
+
+{% endblock %}

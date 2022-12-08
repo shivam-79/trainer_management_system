@@ -1,0 +1,49 @@
+{% extends 'navbar//admin_navbar.html' %}
+
+{% block content %}
+
+{% load static %}
+<link href="{% static 'css/assign.css' %}" rel="stylesheet">
+
+<body>
+<div>
+<h1 >Assign New Batch</h1>
+<form action="batch_assign_data" method="post">
+    {% csrf_token %}
+    <table align="center">
+       <tr>
+           <td align="center">
+               <select name="ddlN">
+                   <option>--Trainer Name--</option>
+                   {% for i in data1 %}
+                   <option>{{ i.Tname}}</option>
+                   {% endfor %}
+               </select>
+           </td>
+       </tr>
+       <tr>
+           <td align="center"><input type="number" name="txtBN" placeholder="Batch No."></td>
+       </tr>
+       <tr>
+           <td align="center"><input type="datetime-local" name="txtD" placeholder="Date"></td>
+       </tr>
+       <tr>
+           <td align="center">
+               <select name="ddlC">
+                   <option>--Trainer Course--</option>
+                   {% for i in data2 %}
+                   <option>{{ i.course_name }}</option>
+                   {% endfor %}
+               </select>
+           </td>
+       </tr>
+       <tr>
+           <td align="center">
+               <input type="submit" name="sub" id="sub" value="Assign">
+           </td>
+       </tr>
+    </table>
+</form>
+</div>
+</body>
+{% endblock %}

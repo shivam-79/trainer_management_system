@@ -1,0 +1,31 @@
+{% extends 'navbar//trainer_navbar.html' %}
+
+{% block content %}
+
+{% load static %}
+<link href="{% static 'css/details.css' %}" rel="stylesheet">
+
+<h2 align="center">Trainer details</h2>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Trainer_name</th>
+        <th>Trainer_phone</th>
+        <th>Trainer_email</th>
+        <th>Trainer_city</th>
+        <th>Trainer_course</th>
+        <th>Update</th>
+    </tr>
+        <tr>
+            <td>{{ data.id }}</td>
+            <td>{{ data.Tname }}</td>
+            <td>{{ data.Tphone }}</td>
+            <td>{{ data.Temail }}</td>
+            <td>{{ data.Tcity }}</td>
+            <td>{{ data.Tcourse }}</td>
+            <td><a href="{% url 'trainer_update' data.id %}">Update</a> </td>
+        </tr>
+</table>
+
+{% endblock %}

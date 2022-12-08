@@ -1,0 +1,49 @@
+body{
+    background:url('/static/images/login5.jpg');
+    background-size:cover;
+    background-repeat:no repeat;
+}
+
+div{
+    margin-left:500px;
+    margin-top:200px;
+    border-radius:5px;
+    width:500px;
+}
+
+h1{
+    font-weight:bold;
+}
+
+h2{
+    font-weight:bold;
+    color:red;
+}
+
+input[type=text],[type=password]{
+    height:35px;
+    border-radius:5px;
+    width:220px;
+    border:2px solid black;
+}
+
+input[type=submit] {
+    background:blue;
+    width:100px;
+    border-radius:5px;
+    color:white;
+    height:30px;
+}
+
+td,a{
+    font-weight:bold;
+    font-size:25px;
+        color:black;
+}
+
+a:hover{
+    color:blue;
+}
+a:link{
+    text-decoration:none;
+}

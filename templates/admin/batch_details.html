@@ -1,0 +1,32 @@
+{% extends 'navbar//admin_navbar.html' %}
+
+{% block content %}
+
+{% load static %}
+<link href="{% static 'css/details.css' %}" rel="stylesheet">
+
+<h2 align="center">Batch details</h2>
+
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>Trainer_name</th>
+    <th>Batch_No</th>
+    <th>Date</th>
+    <th>Trainer_course</th>
+    <th>Delete_Batch</th>
+    <th>Update_batch</th>
+  </tr>
+  {% for i in data %}
+  <tr>
+    <td>{{ i.id }}</td>
+    <td>{{ i.Trainer_Name }}</td>
+    <td>{{ i.Batch_No }}</td>
+    <td>{{ i.Date }}</td>
+    <td>{{ i.Trainer_Course }}</td>
+    <td><a href="{% url 'batch_delete' i.id %}">delete</a> </td>
+    <td><a href="{% url 'batch_update' i.id %}">update</a> </td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

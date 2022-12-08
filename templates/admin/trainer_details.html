@@ -1,0 +1,33 @@
+{% extends 'navbar//admin_navbar.html' %}
+
+{% block content %}
+
+{% load static %}
+<link href="{% static 'css/details.css' %}" rel="stylesheet">
+
+<h2 align="center">Trainer details</h2>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Trainer_name</th>
+        <th>Trainer_phone</th>
+        <th>Trainer_email</th>
+        <th>Trainer_city</th>
+        <th>Trainer_course</th>
+        <th>Delete</th>
+    </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{ i.id }}</td>
+            <td>{{ i.Tname }}</td>
+            <td>{{ i.Tphone }}</td>
+            <td>{{ i.Temail }}</td>
+            <td>{{ i.Tcity }}</td>
+            <td>{{ i.Tcourse }}</td>
+            <td><a href="{% url 'delete' i.id %}">delete</a> </td>
+        </tr>
+        {% endfor %}
+</table>
+
+{% endblock %}

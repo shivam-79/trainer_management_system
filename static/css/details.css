@@ -1,0 +1,12 @@
+body{
+    background:url('/static/images/table_bg.jpg');
+    background-size:cover;
+    background-repeat:no repeat;
+}
+
+h2{
+    font-weight:bold;
+    color:#030201;
+    font-style:italic;
+    margin-bottom:25px;
+}

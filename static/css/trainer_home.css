@@ -1,0 +1,10 @@
+body{
+    background:url("/static/images/trainer_home.jpg");
+    background-size:cover;
+    background-repeat:no repeat;
+}
+h1{
+    color:#FAFAD2;
+    font-weight:bold;
+    font-style:italic;
+}
